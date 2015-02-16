@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+source 'http://repo.release.cerner.corp/main/rubygems/'
+source 'http://repo.release.cerner.corp/internal/rubygems/'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
@@ -47,3 +49,16 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'guard-rspec'
+
+gem 'cerner_openid_client', '= 1.4.0'
+
+gem 'activerecord-session_store_ext'
+
+gem 'pry', '~> 0.9.12'
+gem 'pry-rails', '~> 0.3.2'
+gem 'pry-doc', '~> 0.4.6'
+gem 'pry-git', '~> 0.2.3'
+gem 'pry-stack_explorer', '~> 0.4.9'
+gem 'pry-byebug', '~> 1.3.2'

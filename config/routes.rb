@@ -1,4 +1,9 @@
 SeeTheWorld::Application.routes.draw do
+  resources :product_types
+
+  root "welcome#index"
+
+  mount CernerOpenidClient::Engine => '/auth/openid'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
